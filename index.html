@@ -1,137 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Siddhi Tyagi | Portfolio</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<style>
-html {
-  scroll-behavior: smooth;
-}
-.glass {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.1);
-}
-</style>
-</head>
+<!-- Hero Section -->
+<section id="home" class="pt-40 pb-20 md:pt-56 md:pb-32 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
 
-<body class="bg-gray-950 text-white font-sans">
+        <!-- Left Content -->
+        <div>
+            <h1 class="hero-text text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Siddhi Tyagi
+            </h1>
 
-<!-- NAVBAR -->
-<nav class="fixed w-full bg-gray-950/70 backdrop-blur-md p-4 flex justify-between items-center z-50">
-  <h1 class="text-xl font-bold text-purple-400">Siddhi Tyagi</h1>
-  <div class="space-x-6 hidden md:flex">
-    <a href="#about" class="hover:text-purple-400">About</a>
-    <a href="#experience" class="hover:text-purple-400">Experience</a>
-    <a href="#projects" class="hover:text-purple-400">Projects</a>
-    <a href="#contact" class="hover:text-purple-400">Contact</a>
-  </div>
-</nav>
+            <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                B.Tech Information Technology student specializing in 
+                <span class="text-blue-600 font-semibold">IoT, Robotics,</span> 
+                and <span class="text-blue-600 font-semibold">Product-Oriented Development</span>.
+            </p>
 
-<!-- HERO -->
-<section class="h-screen flex flex-col justify-center items-center text-center px-6">
-  <h1 class="text-5xl md:text-6xl font-bold mb-4">
-    Hi, I'm <span class="text-purple-500">Siddhi Tyagi</span>
-  </h1>
-  <span id="typing" class="text-xl md:text-2xl text-gray-400"></span>
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact" 
+                   class="bg-gray-900 text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-gray-200">
+                    Get in touch
+                </a>
 
-  <div class="mt-8 space-x-4">
-    <a href="#projects" class="bg-purple-600 px-6 py-3 rounded-lg hover:bg-purple-700 transition">View Projects</a>
-    <a href="SIDDHITYAGIResume.pdf" download class="border border-purple-600 px-6 py-3 rounded-lg hover:bg-purple-600 transition">Download Resume</a>
-  </div>
+                <a href="SIDDHITYAGIResume.pdf" download
+                   class="border border-gray-300 px-8 py-4 rounded-full font-semibold hover:border-gray-900 transition-all">
+                    Download Resume
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center md:justify-end">
+            <div class="relative group">
+                <img src="SiddhiPicture.jpg"
+                     alt="Siddhi Tyagi"
+                     class="w-72 h-72 md:w-96 md:h-96 object-cover rounded-full shadow-2xl border-4 border-white transition-all duration-500 group-hover:scale-105">
+
+                <!-- Subtle Glow -->
+                <div class="absolute inset-0 rounded-full bg-blue-500 opacity-0 group-hover:opacity-10 blur-2xl transition duration-500"></div>
+            </div>
+        </div>
+
+    </div>
 </section>
-
-<!-- ABOUT -->
-<section id="about" class="py-20 px-8 max-w-5xl mx-auto">
-  <h2 class="text-3xl font-bold mb-6 text-purple-400">About Me</h2>
-  <p class="text-gray-300 leading-relaxed">
-    B.Tech IT undergraduate with hands-on experience across Product Development, IoT Prototyping,
-    Market Research, and Business Outreach. I define real-world problems, structure product
-    requirements, and build scalable technology solutions integrating hardware and software.
-  </p>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="py-20 px-8 bg-gray-900">
-  <h2 class="text-3xl font-bold mb-12 text-center text-purple-400">Experience</h2>
-
-  <div class="space-y-8 max-w-4xl mx-auto">
-
-    <div class="glass p-6 rounded-xl">
-      <h3 class="text-xl font-semibold">Project Trainee – AICTE IDEA Lab</h3>
-      <p class="text-gray-400">IoT & Robotics | 2025 – Present</p>
-      <p class="mt-3 text-gray-300">Worked on sensor interfacing, hardware–software integration, and prototype development.</p>
-    </div>
-
-    <div class="glass p-6 rounded-xl">
-      <h3 class="text-xl font-semibold">Lead Generation Intern – Bonhoeffer Machines</h3>
-      <p class="text-gray-400">2024</p>
-      <p class="mt-3 text-gray-300">Conducted structured B2B market research and built lead tracking systems.</p>
-    </div>
-
-    <div class="glass p-6 rounded-xl">
-      <h3 class="text-xl font-semibold">Fundraising Intern – Muskurahat Foundation</h3>
-      <p class="text-gray-400">2025</p>
-      <p class="mt-3 text-gray-300">Engaged donors and structured follow-up processes to improve outreach impact.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="py-20 px-8">
-  <h2 class="text-3xl font-bold mb-12 text-center text-purple-400">Projects</h2>
-
-  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-    <div class="glass p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Smart Blind Assistance System</h3>
-      <p class="text-gray-400">IoT + Sensors + Embedded</p>
-      <p class="mt-3 text-gray-300 text-sm">Affordable assistive device using ultrasonic sensors & microcontrollers.</p>
-    </div>
-
-    <div class="glass p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Netra – AI Traffic System</h3>
-      <p class="text-gray-400">AI + Route Optimization</p>
-      <p class="mt-3 text-gray-300 text-sm">AI-powered green route and smart traffic management system.</p>
-    </div>
-
-    <div class="glass p-6 rounded-xl hover:scale-105 transition">
-      <h3 class="text-xl font-semibold mb-2">Solar Assisted AI Car</h3>
-      <p class="text-gray-400">Embedded + Computer Vision</p>
-      <p class="mt-3 text-gray-300 text-sm">Small-scale object detection vehicle with route intelligence.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="py-20 px-8 bg-gray-900 text-center">
-  <h2 class="text-3xl font-bold mb-6 text-purple-400">Contact Me</h2>
-  <p class="text-gray-300">Let's build something impactful.</p>
-
-  <div class="mt-6 space-x-6">
-    <a href="mailto:siddhityagiwork@gmail.com" class="hover:text-purple-400">Email</a>
-    <a href="https://github.com/SiddhiTyagi" target="_blank" class="hover:text-purple-400">GitHub</a>
-    <a href="https://linkedin.com/in/siddhityagi" target="_blank" class="hover:text-purple-400">LinkedIn</a>
-  </div>
-</section>
-
-<script>
-var typed = new Typed('#typing', {
-  strings: [
-    "Product-Minded Technologist",
-    "IoT & Embedded Systems Builder",
-    "Problem Solver with Business Insight"
-  ],
-  typeSpeed: 50,
-  backSpeed: 30,
-  loop: true
-});
-</script>
-
-</body>
-</html>
